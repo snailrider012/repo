@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19A602" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Resume" representedClassName="Resume" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="school" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <fetchedProperty name="originalResumes" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Resume" predicateString="type = 0"/>
+        </fetchedProperty>
+        <fetchedProperty name="refreshResumes" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Resume" predicateString="type = 1"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="Resume" positionX="-63" positionY="-18" width="128" height="131"/>
+    </elements>
+</model>
